@@ -13,7 +13,7 @@ sequenceDiagram
     participant iframe
     participant viewscreen
     dotcom->>iframe: loads html w/ iframe url
-    iframe->>iframe: return value
+    iframe->>dotcom: return value
     iframe->>viewscreen: request template
     viewscreen->>iframe: html & javascript
     iframe->>dotcom: iframe ready
